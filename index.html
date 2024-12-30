@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Fill your Information blow </h1>
-<form action="#">
-    <!-- Name portion -->
-    <label for="name">Name:</label>
-    <input type="text" placeholder="Enter your Name" required value="">
-    <br>
-    <!-- email portion -->
-    <label for="email">Email:</label>
-    <input type="text" placeholder="Enter your Email" value="" required>
-    <br>
-    <!-- password portion  -->
-     <label for="password">Password:</label>
-     <input type="text" placeholder="Enter Your password" value="" required>
-     <br>
-     <!-- gender section -->
-    <input type="radio" name="gender" value="male">Male
-    <input type="radio" name="gender" value="female">female
-       <br>
-    <!-- submit button -->
-     <input type="submit"value="submit">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Fill in Your Information Below</h1>
+      <form action="#">
+        <!-- Name portion -->
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your Name" required value="" id="name" />
+        <br />
 
+        <!-- Email portion -->
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your Email" value="" required id="email" />
+        <br />
 
-</form>
-</body>
+        <!-- Password portion -->
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Your Password" value="" required id="password" />
+        <br />
+
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" />
+        <br>
+
+        <!-- Picture upload -->
+        <label for="picture">Upload your Picture:</label>
+        <input type="file" name="picture" id="picture" />
+        <br />
+
+        <!-- Gender section -->
+         <label for="Gender">Select the Gender</label>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+        <br />
+
+        <!-- Hobby section -->
+        <label for="hobbies">Select Your Favorite Hobby:</label>
+        <select name="hobbies" id="hobbies">
+          <option value="football">Football</option>
+          <option value="hockey">Hockey</option>
+          <option value="cricket">Cricket</option>
+        </select>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>

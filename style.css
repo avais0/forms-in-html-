@@ -1,14 +1,34 @@
-*{
-    padding: 0;
-    margin:0 ;
-    background :#414141;
-    color: white;
-    text-align: center;
-    height: auto;
-    width: auto;
-    text-transform: calc(text-align);
-
+/* General Body and Centering */
+body {
+  font-family:Arial, Arial, Helvetica ,sans-serif;
+  background-color: #414141;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 h1{
-   
+    text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 1s ease-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
