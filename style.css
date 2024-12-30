@@ -32,3 +32,8 @@ form {
   display: flex;
   flex-direction: column;
 }
+marquee {
+    display: inline-block;
+    width: -webkit-fill-available;
+    
+}
